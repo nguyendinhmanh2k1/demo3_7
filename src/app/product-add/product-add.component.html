@@ -1,0 +1,14 @@
+
+<form>
+  <div class="mb-3">
+    <label for="" class="form-label">Product price</label>
+    <input type="text" class="form-control" name="price" [(ngModel)]="Product.price">
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">productContent</label>
+    <input type="text" class="form-control" name="productContent" [(ngModel)]="Product.productContent">
+  </div>
+  <!--  -->
+  <button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+</form>

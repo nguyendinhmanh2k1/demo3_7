@@ -1,0 +1,26 @@
+
+<section class="mainContent">
+  <!-- <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product>
+  <app-product ngClass="productRow"> </app-product> -->
+  <div ngClass="productRow">
+    <article class="productInfo" *ngFor="let product of products"><!-- Each individual product description -->
+    <!-- <div><img alt="sample" src="{{Product.img}}"></div> -->
+    <div><img alt="sample" src="https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg"></div>
+    <p class="price">${{product.price}}</p>
+    <p class="productContent">{{product.productContent}}</p>
+    <!-- <p class="price">{{Product.status ? 'Còn Hàng' : 'Hết Hàng'}}</p> -->
+    <input type="button" name="button" value="Buy" class="buyButton">
+      <!-- <button class="btn btn-primary buyButton" (click)="changeStatus()">Mua Hàng</button> -->
+      <button (click)="deleteProduct(product.id)">Delete</button>
+      <!-- <button (click)="ShowDetail(product)">Chi Tiết</button> -->
+  </article>
+  </div>
+</section>
+<!-- <p *ngIf="selected">{{selected.productContent}}</p> -->

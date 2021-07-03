@@ -1,0 +1,42 @@
+<body>
+  <div id="mainWrapper">
+    <header>
+      <!-- This is the header content. It contains Logo and links -->
+      <div id="logo"> <!-- <img src="logoImage.png" alt="sample logo"> -->
+        <!-- Company Logo text -->
+        LOGO </div>
+      <div id="headerLinks"><a href="#" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a></div>
+    </header>
+    <!-- 0 -->
+    <app-slide></app-slide>
+    <!-- 0 -->
+    <div id="content">
+      <!-- 1 -->
+      <app-category></app-category>
+      <!-- 1 -->
+      <!-- * -->
+      <router-outlet></router-outlet>
+      <!-- <app-product-add></app-product-add> -->
+      <!-- * -->
+      <!-- 2 -->
+
+      <!-- <app-product-list></app-product-list> -->
+
+      <!-- 2 -->
+    </div>
+    <footer>
+      <!-- This is the footer with default 3 divs -->
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+      </div>
+      <div class="footerlinks">
+        <p><a href="#" title="Link">Link 1 </a></p>
+        <p><a href="#" title="Link">Link 2</a></p>
+        <p><a href="#" title="Link">Link 3</a></p>
+      </div>
+    </footer>
+  </div>
+  </body>
