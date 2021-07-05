@@ -25,7 +25,8 @@ export class ProductListComponent implements OnInit {
   //this.selected = product;
   }
   getProducts(){
-    this.productSercice.getProduct().subscribe((Data:any)=>{
+    this.productSercice.getProduct().subscribe(Data=>{
+    console.log(Data);
     this.products=Data;
     //console.log(Data);
     })
@@ -33,11 +34,10 @@ export class ProductListComponent implements OnInit {
   deleteProduct(id:any)
   {
     // this.productSercice.deleteProduct(id).subscribe((Data:any)=>{
-    //   this.products = this.products.filter(product=>product.id=Data.id);
+    // this.products = this.products.filter(product=>product.id=Data.id);
     // })
-
-    // this.productSercice.deleteProduct(id).subscribe(response => {
-    //   this.products = this.products.filter(product => product.id=response.id);
-    // })
-  }
+    this.productSercice.deleteProduct(id).subscribe(response => {
+      this.products = this.products.filter(product => product.id != response.id);
+    })
+   }
 }

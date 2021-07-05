@@ -10,14 +10,16 @@ import { SlideComponent } from './slide/slide.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { FormsModule } from '@angular/forms';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       ProductListComponent,
       ProductComponent,
       CategoryComponent,
       SlideComponent,
-      ProductAddComponent
+      ProductAddComponent,
+      ProductEditComponent
    ],
   imports: [
     BrowserModule,
